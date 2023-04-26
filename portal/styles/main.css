@@ -1,4 +1,4 @@
-nav {
+header {
     background-color: teal;
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@ body {
     font-family: 'Lato', sans-serif;
   }
 
-nav img {
+header img {
     height: 150px;
     margin-right: 50px;
 }
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 550px;
+    text-align: center;
     font-size: 2em;
 }
 
