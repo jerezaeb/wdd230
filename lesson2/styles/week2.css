@@ -10,13 +10,15 @@ body {
         margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px; 
+        gap: 20px; 
         font-size: 0.8rem;
     }
-    
+    .column {
+        display: block;
+    }
 
     header {
-        background-color: teal;
+        background-color: teal; 
         display: flex;
         align-items: center;
         padding: 10px;
