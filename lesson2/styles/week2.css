@@ -35,11 +35,23 @@ footer #date {
 
 /*small screens*/
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (max-width: 37.5em) {
     main {
         margin: 0 auto;
         display: block;
         font-size: 0.8rem;
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    section img {
+        width: 100%;
     }
     
 }
