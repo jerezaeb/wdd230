@@ -216,24 +216,9 @@ footer #date {
         margin-top: 50px;
     }
 
-    #hamButton {
-        display: none; /* hide hamburger button */
-    } 
     
-    .navigation {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none; 
-        padding: 0;
-    }
-    
-    .navigation li {
-        display: block;
-        flex: 1 1 auto;
-    }
-}
 
-    /*#hamButton {
+    #hamButton {
         display: block;
         position: absolute;
         top: 10px;
@@ -252,7 +237,7 @@ footer #date {
     }
     .navigation li {
         display: none;
-        flex: 1 1 auto;
+
     }
     .navigation li a {
         padding: 1.15rem;
@@ -262,18 +247,19 @@ footer #date {
         color: #eed9d3;
     }
     .navigation li a:hover {
-        background-color: #bbb;
-        color: #333;
+        background-color:  #368DFF;
+        color: #eed9d3;
         font-weight: 700;
     }
     
     /* when the button is clicked - the responsive class is added and accounted for here */
-    /*.navigation.responsive li {
+    .navigation.responsive li {
         display: block;
         width: 100%;
     }
     .navigation.responsive li a {
         display: block;
+        width: 100%;
     }
     
 }
