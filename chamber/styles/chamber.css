@@ -132,19 +132,20 @@ footer #date {
 footer {
     background-color: #0C356B;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 10px;
     width: auto;
     height: auto;
     margin: auto;
-    flex-direction: column;
+    
 }
 
 footer p {
     display: flex;
     color: #F2D0C6;
-    text-align: center;
-    margin: 30px auto 0;
-    justify-content:space-around;
+    margin: 5px;
 
 }
 
