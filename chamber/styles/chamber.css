@@ -111,7 +111,8 @@ footer #date {
         width: fit-content;
         font-size: 1.5rem;
         padding: .5rem;
-        color: navy;
+        color:#0C356B;
+        background-color: #eed9d3;
     }
     .navigation {
         display: flex;
