@@ -10,3 +10,14 @@ const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('responsive');
 });
+
+
+  function updateDate() {
+    var now = new Date();
+    var options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+    var formattedDate = now.toLocaleDateString('en-US', options);
+    
+    document.getElementById("day").textContent = formattedDate;
+  }
+  
+  updateDate();
