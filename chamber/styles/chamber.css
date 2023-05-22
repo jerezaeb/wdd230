@@ -49,14 +49,14 @@ nav a {
 }
 
 .weather {
-    display: grid;
+
     border: 1px solid;
     height: 300px;
         
 }
 .herodiv {
 
-    display: grid;
+
     height: 400px;
     border: 1px solid;
     }
@@ -74,17 +74,19 @@ nav a {
     border: 1px solid rgba(0,0,0,.1);
     padding: 1.5rem;
     }
-.news {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: 1f 1fr 1fr;
-    width: 960px;
-    height: 400px;
-    border: 1px solid;
-    margin-bottom: 20px;
-    justify-items: center;
-  }
 
+.news-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: 10px auto;
+    column-gap: 10px;
+    border: 1px solid;
+    width: 960px;
+    height: 300px;
+    margin-left: 300px;
+        
+}
+  
 div h2 {
     font-size: 2em;
     margin-top: 50px;
