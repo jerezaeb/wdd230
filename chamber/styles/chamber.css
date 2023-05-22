@@ -1,8 +1,11 @@
 body {
     font-family: 'Montserrat', 'Roboto';
     width: 100%;
+  margin: 0;
+  padding: 0;
  
 }
+
 
 
 h1{
@@ -73,6 +76,7 @@ nav a {
     background: radial-gradient(#eee, #368DFF);
     border: 1px solid rgba(0,0,0,.1);
     padding: 1.5rem;
+    text-align: center;
     }
 
 .news-grid {
@@ -93,7 +97,7 @@ div h2 {
 }
 
 div p {
-    font-size: 1.5em;
+    font-size: 1em;
     margin-left: 100px;
     margin-right: 100px;
     font-family: 'Roboto';
@@ -106,7 +110,7 @@ footer {
     background-color: #0C356B;
     display: flex;
     padding: 10px;;
-    width: auto;
+    width: 100%;
     height: auto;
     margin: auto; 
     justify-content: space-around;
