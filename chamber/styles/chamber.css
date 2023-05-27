@@ -3,7 +3,8 @@ body {
     width: 100%;
   margin: 0;
   padding: 0;
- 
+
+
 }
 
 
@@ -52,17 +53,31 @@ nav a {
 }
 
 .weather {
-
-    border: 1px solid;
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
     height: 300px;
+    background: #368DFF;
         
 }
+.weather h2{
+    text-align: center;
+    font-size: 1em;
+
+}
+.weather-image {
+    display: flex;
+    justify-content:center;
+    width: 50%;
+    height: auto;
+  
+}
 .herodiv {
-
-
-    height: 400px;
-    border: 1px solid;
+    display: flex;
+    flex-direction: center;
     }
+
+
 .members {
     border: 1px solid;
     height: 300px;
@@ -70,27 +85,19 @@ nav a {
 
 .join {
     position: absolute;
-    margin-top: 220px;
+    margin-top: 300px;
     margin-left: 320px;
     width: 200px;
-    background: radial-gradient(#eee, #368DFF);
+    background: radial-gradient(#eee, #F2D0C6);
     border: 1px solid rgba(0,0,0,.1);
     padding: 1.5rem;
     text-align: center;
+    border: 2px solid #0C356B;;
+    font-weight: bold;
     }
 
-.news-grid {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    margin: 10px auto;
-    column-gap: 10px;
-    border: 1px solid;
-    width: 960px;
-    height: 300px;
-    margin-left: 300px;
-        
-}
-  
+
+
 div h2 {
     font-size: 2em;
     margin-top: 50px;
@@ -108,16 +115,13 @@ p{
 
 footer {
     background-color: #0C356B;
-    display: flex;
     padding: 10px;;
     width: 100%;
-    height: auto;
+    height: 100px;
     margin: auto; 
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    display: flex;
+  
+    
 }
 
 footer .logo {
@@ -160,8 +164,9 @@ footer #date {
         display: flex;
         background-color: #0C356B;
         color: #eed9d3;
+        justify-content: center;
         text-align: center;
-        width: 100% 0;
+        width: 100%;
         height: auto;
         margin: auto;
         flex-direction: column;
@@ -210,12 +215,42 @@ footer #date {
     .navigation.responsive li a {
         display: block;
     }
-    
-    
+
+    .herogrid {
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+        column-gap: 10px;
+        
+    }
+    #hero{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .weather {
+        flex-direction: column;
+        border: 1px solid;
+        height: 300px;
+            
+    }
+    .news-grid {
+        flex-direction: column;
+        border: 1px solid;
+        justify-content: center;
+            
+    }
 .logo {
     width: 200px;
     margin: auto;
 
+}
+
+.join {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 150px;
 }
 
 footer {
@@ -301,6 +336,10 @@ footer #date {
         list-style: none;
         background-color: #0C356B;
     }
+    #hero{
+        width: 600px;
+        height: 300px;
+    }
     .navigation li {
         display: none;
 
@@ -355,6 +394,11 @@ header {
     justify-content: space-around;
 
 }
+
+#hero{
+    width: 900px;
+    height: 600px;
+}
 h1{
     margin-top: 50px;
 }
@@ -374,5 +418,15 @@ h1{
     display: block;
     flex: 1 1 auto;
 }
-
+.news-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin: 10px auto;
+    column-gap: 10px;
+    border: 1px solid;
+    width: 900px;
+    height: 300px;
+    margin-left: 300px;
+        
+}
 }
