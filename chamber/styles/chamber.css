@@ -56,20 +56,19 @@ nav a {
     display: flex;
     text-align: center;
     margin-top: 10px;
+    margin-left: 10px;
     height: 300px;
     background: #368DFF;
+    font-weight: bold;
+    text-align: center;
         
 }
-.weather h2{
-    text-align: center;
-    font-size: 1em;
-
-}
-.weather-image {
-    display: flex;
-    justify-content:center;
-    width: 50%;
-    height: auto;
+.weather img {
+    display: block;
+    align-items: left;
+    width: 150px;
+    height: 150px;
+    
   
 }
 .herodiv {
