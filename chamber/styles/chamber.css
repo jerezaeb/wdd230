@@ -1,13 +1,11 @@
 body {
-    font-family: 'Montserrat', 'Roboto';
-    width: 100%;
-  margin: 0;
-  padding: 0;
+font-family: 'Montserrat', 'Roboto';
+width: 100%;
+margin: 0;
+padding: 0;
 
 
 }
-
-
 
 h1{
     margin-top: 50px;
@@ -54,18 +52,27 @@ nav a {
 
 .weather {
     display: flex;
+    flex-direction: column;
     text-align: center;
     margin-top: 10px;
     margin-left: 10px;
     height: 300px;
-    background: #368DFF;
+    background: radial-gradient(#F2D0C6, #0C356B);
     font-weight: bold;
     text-align: center;
+    border-radius: 60px/15px;
         
 }
-.weather img {
-    display: block;
-    align-items: left;
+.weather h2{
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: roboto;
+}
+.weather-image {
+    margin-top: 0;
     width: 150px;
     height: 150px;
     
@@ -87,11 +94,11 @@ nav a {
     margin-top: 300px;
     margin-left: 320px;
     width: 200px;
-    background: radial-gradient(#eee, #F2D0C6);
+    background: radial-gradient(#eee, #0C356B);
     border: 1px solid rgba(0,0,0,.1);
     padding: 1.5rem;
     text-align: center;
-    border: 2px solid #0C356B;;
+    border: 2px solid #0C356B;
     font-weight: bold;
     }
 
@@ -112,36 +119,7 @@ p{
     font-family: 'Roboto';
 }
 
-footer {
-    background-color: #0C356B;
-    padding: 10px;;
-    width: 100%;
-    height: 100px;
-    margin: auto; 
-    display: flex;
-  
-    
-}
 
-footer .logo {
-
-    margin-top: 0;
-    width: 100px;
-
-}
-
-footer p {
-    margin-top: 50px;
-    margin-left: auto;
-    color: #F2D0C6;
-}
-
-footer #date {
-    margin-top: 50px;
-    font-style: italic;
-    margin-left: auto;
-    color: #F2D0C6;
-}
 
 
 
@@ -366,66 +344,4 @@ footer #date {
         width: 100%;
     }
     
-}
-
-/*large screens*/
-
-
-@media only screen and (min-width: 60em)  {
-main {
-
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-header {
-    display: flex;
-    background-color: #0C356B;
-    color: #eed9d3;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    justify-content: space-around;
-
-}
-
-#hero{
-    width: 900px;
-    height: 600px;
-}
-h1{
-    margin-top: 50px;
-}
-
-#hamButton {
-    display: none; /* hide hamburger button */
-} 
-
-.navigation {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none; 
-    padding: 0;
-}
-
-.navigation li {
-    display: block;
-    flex: 1 1 auto;
-}
-.news-grid {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    margin: 10px auto;
-    column-gap: 10px;
-    border: 1px solid;
-    width: 900px;
-    height: 300px;
-    margin-left: 300px;
-        
-}
 }
