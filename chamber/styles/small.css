@@ -123,10 +123,8 @@
         
     }
     .cta {
-        position: absolute;
         grid-column: 3/4;
         grid-row: 2/2;
-    
         width: 200px;
         background: radial-gradient(#eee, #0C356B);
         border: 1px solid rgba(0,0,0,.1);
@@ -134,6 +132,7 @@
         text-align: center;
         border: 2px solid #0C356B;
         font-weight: bold;
+        z-index: 9;
         }
     .weather
     {
@@ -173,6 +172,7 @@
         margin:10px;
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
+        
     }
 
     .newsrelease
