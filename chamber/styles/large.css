@@ -195,19 +195,22 @@
     }
 
     #image-container{
-        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        margin-left: 150px;
-        flex-direction: column;
+        column-gap: 50px;
+        margin-top: 50px;
+        margin-left: 100px;
+        
       }
       
       .lazy-image {
+    
         width: 600px;
         height: 400px;
         background-color: lightgray;
         transition: opacity 0.5s ease-in-out;
         margin-bottom: 20px;
+        border-radius: 0px 50px 0px 50px;
         
  
         
@@ -216,10 +219,16 @@
       .info-discover {
         width: 600px;
         height: 400px;
-        margin-left: 100px;
-      
-        
+    
       }
+
+    .discover h1{
+        text-align: center;
+    }
+
+    .discover p{
+        margin-left: 100px;
+    }
     footer {
         background-color: #0C356B;
         padding: 10px;;
