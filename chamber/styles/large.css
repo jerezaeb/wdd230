@@ -121,8 +121,28 @@
         margin: 10px;
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
+        
+        
     }
 
+    .weather-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    
+    }
+    .img-weather {
+        grid-column-start: 1;
+        width: 120px;
+        height: 120px;
+    }
+    .info-weather {
+        grid-column-start: 2;
+        line-height: 90%;
+    }
+    .info-weather h3{
+        font-size: 2em;
+    }
     .spotlight1
     {
         grid-column-start: 5;
@@ -173,6 +193,33 @@
         margin:10px;
         border: 1px solid #0C356B;;
     }
+
+    #image-container{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        margin-left: 150px;
+        flex-direction: column;
+      }
+      
+      .lazy-image {
+        width: 600px;
+        height: 400px;
+        background-color: lightgray;
+        transition: opacity 0.5s ease-in-out;
+        margin-bottom: 20px;
+        
+ 
+        
+      }
+
+      .info-discover {
+        width: 600px;
+        height: 400px;
+        margin-left: 100px;
+      
+        
+      }
     footer {
         background-color: #0C356B;
         padding: 10px;;

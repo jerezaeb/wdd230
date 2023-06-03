@@ -117,9 +117,8 @@
         text-align: center;
     }
     #heroimg {
-        width: 880px;
-        height: 520px;
-        margin-left: 40px;
+        width: 600px;
+        height: 300px;
         
     }
     .cta {
@@ -140,6 +139,25 @@
         margin: 10px;
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
+    }
+
+    .weather-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    
+    }
+    .img-weather {
+        grid-column-start: 1;
+        width: 120px;
+        height: 120px;
+    }
+    .info-weather {
+        grid-column-start: 2;
+        line-height: 90%;
+    }
+    .info-weather h3{
+        font-size: 2em;
     }
 
     .spotlight1

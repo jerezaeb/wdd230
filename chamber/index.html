@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel = "stylesheet" href = "styles/large.css">
-    <link rel = "stylesheet" href = "styles/sma.css">
+    <link rel = "stylesheet" href = "styles/small.css">
 </head>
 <body>
 
@@ -47,9 +47,17 @@
     <div class="hero"> <img id="heroimg" src ="images/wdd230-org.jpg" alt ="cbd hero">
         <section class="cta">Join The Chamber</section> 
     </div>
-    <div class="weather">Weather
-        <img src="" alt="weather">
-        <span class = "temperature"></span> </div>
+    <div class="weather"><h3>Weather </h3> 
+        <div class="weather-box" >
+        <img class = img-weather src="images/weather.png" alt="weather">
+        <section  class = "info-weather">
+        <h3> 32°C </h3>
+        <p> Cloudy </p>
+        <p> Humidity: 74% </p>
+        <p> Wind speed: 13km/h</p>
+        </section>
+        </div>
+    </div>
     <div class="spotlight1">Spotlight 1</div>
     <div class="spotlight2">Spotlight 2</div>
     <div class="spotlight3">Spotlight 3</div>
@@ -71,6 +79,7 @@
 </footer>
 
 <script src="scripts/chamber.js"></script>
+
 </body>
 
 
