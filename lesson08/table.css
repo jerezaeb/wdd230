@@ -44,3 +44,12 @@ td {
 tbody tr:nth-child(odd) {
 	background-color: var(--zebra);
 }
+
+.check {
+    font-size: 1.5em;
+    color:#aa95ab;
+}
+.cross {
+    font-size: 1.5em;
+    color:red;
+}
