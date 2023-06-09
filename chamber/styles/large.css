@@ -258,4 +258,12 @@
         margin-left: auto;
         color: #F2D0C6;
     }
+
+    .join-container{
+      max-width: 800px;
+      margin:0 auto;
+      height: 600px;
+      border: 1px solid grey;
+      justify-content: center;
+    }
 }

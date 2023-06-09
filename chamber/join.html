@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portal Page</title>
+    <meta name="description" content="Assignment portal for Jereza Bondad in WDD 230: Web Frontend Development at BYU - Idaho">
+    <link rel ="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel = "stylesheet" href = "styles/large.css">
+    <link rel = "stylesheet" href = "styles/small.css">
+</head>
+<body>
+
+<header>
+    <div>
+    <a id="logo-link" href="/index.html">
+        <img class = "logo" src="images/cebu-coc-blue-logo.png" alt="ccoc logo">
+    </a>
+    </div>
+    <div>
+    <h1>Cebu Chamber of Commerce</h1>
+    </div>
+    <div>
+    <nav>
+        <button id = "hamButton">&#9776;</button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>  
+            <li><a href="#">Contact</a></li>     
+        </ul>
+
+    </nav>
+    <div class = "banner">
+        <h3 id ="day" > </h3>
+    </div>
+</header>
+<main>
+    
+<section class="join-container">
+    <h1>Join Us</h1>
+<form action = "thankyou.html" method="get" class="form-join">
+    <div class="form-input">
+        <label for="name">First Name: </label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-input">
+        <label for="last-name">Last Name: </label>
+        <input type="text" name="last-name" id="last-name" required>
+    </div>
+
+    <div class="form-input">
+        <label for="position-tile">Position Title: </label>
+        <input type="text" name="position-tile" id="position-title" required pattern="[a-zA-Z\s\-]{7,}" title="Please enter at least 7 characters consisting of letters, hyphens, and spaces">
+    </div>
+    <div class="form-input">
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email" required placeholder="example@example.com">
+    </div>
+
+    <div class="form-input">
+        <label for="mobile">Mobile Number: </label>
+        <input type="tel" name="mobile" id="mobile" required>
+    </div>
+    <div class="form-input">
+        <label for="membership-level">Membership Level: </label>
+        <select id= "membershipLevel" name="membershipLevel">
+            <option value= "NP Membership">NP Membership</option>
+            <option value= "Bronze Membership">Bronze Membership</option>
+            <option value= "Silver Membership">Silver Membership</option>
+            <option value= "Gold Membership">Gold Membership</option>
+        </select>
+    </div>
+    <div class="form-input">
+    <label for="businessDescription">Business Description: </label>
+    <textarea id="businessDescription" name="businessDescription"></textarea>
+    </div>
+    <div>
+        <input type="hidden" name="dateandtime" value="">
+        <input type="submit" value="Submit">
+    </div>
+
+</form>
+</section>
+</main>
+
+
+<footer>
+    <a id="logo-link" href="/index.html">
+        <img class = "logo" src="images/cebu-coc-blue-logo.png" alt="ccoc logo">
+    </a>
+    <p>Cebu Chamber of Commerce</p>
+    <p>Copyright &copy; <span id = "year"></span> .:|:. Jereza E. Bondad .:|:. Philippines</p>
+    <span id= "date"></span>
+
+</footer>
+
+<script src="scripts/chamber.js"></script>
+
+</body>
+
+
+
+
+
+</html>
