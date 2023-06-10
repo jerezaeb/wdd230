@@ -260,10 +260,62 @@
     }
 
     .join-container{
+
+    
       max-width: 800px;
+      padding: 10px;
       margin:0 auto;
-      height: 600px;
-      border: 1px solid grey;
+      height: 700px;
+      background-color: lightgray;
       justify-content: center;
+      border-radius: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .join-container h1 {
+        text-align: center;
+    }
+
+.form-join{
+    display: grid;
+    gap: 10px;
+}
+
+.form-input label {
+    display: block;
+    font-weight: bold;
+  }
+
+  .form-input input,
+.form-input select,
+.form-input textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form-input textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #0C356B;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #368DFF;
+}
+
+
+
+
+
+
+
 }
