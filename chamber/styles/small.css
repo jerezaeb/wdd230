@@ -117,13 +117,12 @@
         text-align: center;
     }
     #heroimg {
-        width: 600px;
+        width: 550px;
         height: 300px;
         
     }
     .cta {
-        grid-column: 3/4;
-        grid-row: 2/2;
+        
         width: 200px;
         background: radial-gradient(#eee, #0C356B);
         border: 1px solid rgba(0,0,0,.1);
@@ -135,25 +134,21 @@
         }
     .weather
     {
-        grid-row: 3;
         margin: 10px;
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
     }
 
     .weather-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-row: 3;
 
     
     }
     .img-weather {
-        grid-column-start: 1;
         width: 120px;
         height: 120px;
     }
     .info-weather {
-        grid-column-start: 2;
         line-height: 90%;
     }
     .info-weather h3{
@@ -232,4 +227,43 @@
         margin-left: auto;
         color: #F2D0C6;
     }
-}
+
+    .join-container {
+        max-width: 100%;
+        height: auto;
+        padding: 50px;
+        }
+        
+        .join-container h1 {
+        font-size: 1.5em;
+        text-align: center;
+       
+        }
+        
+        .form-input label {
+        display: block;
+        font-size: 18px;
+        }
+        
+        .form-input input,
+        .form-input select,
+        .form-input textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 3px;
+        }
+        
+        .form-input textarea {
+        min-height: 100px;
+        resize: vertical;
+        }
+        
+        input[type="submit"] {
+        padding: 8px 16px;
+        font-size: 14px;
+        }
+    }
+        
+        
+        
+        
