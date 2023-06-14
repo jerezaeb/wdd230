@@ -1,0 +1,15 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    
+}
+
+.cards img{
+    width: 250px;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
