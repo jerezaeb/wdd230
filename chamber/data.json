@@ -1,0 +1,69 @@
+{
+    "business": [
+        {
+            "businessname": "Street Food Market",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : "https://github.com/jerezaeb/wdd230/blob/main/chamber/images/streetfood.jpg"
+        },
+
+        
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        },
+        {
+            "name": "",
+            "address": "",
+            "phone": "",
+            "description" : "",
+            "imagepath" : ""
+        }
+    ]
+}
