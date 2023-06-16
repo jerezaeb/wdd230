@@ -14,56 +14,56 @@
             "address": "55 Mercado St Balamban Cebu City 6000",
             "phone": "0926 478 9020",
             "description" : "Discover a world of convenience and endless possibilities as you explore our virtual aisles, offering a wide range of products delivered right to your doorstep with just a few clicks.",
-            "imagepath" : "/images/onlineshop.jpg"
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/onlineshop.jpg"
         },
         {
             "businessname": "Little Seoul",
             "address": "21 Park Road, Talamban Cebu City 6000",
             "phone": "0917 678 1234",
             "description" : "Embark on a mouthwatering journey through the sizzling flavors of Korean BBQ. Indulge in premium cuts of grilled pork belly, accompanied by an array of delicious banchan and traditional accompaniments.",
-            "imagepath" : "/images/koreanfood.jpg"
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/koreanfood.jpg"
         },
         {
             "businessname": "HandyMan Repair Service",
-            "address": "",
-            "phone": "",
+            "address": "123 Mango Street, Barangay Lahug, Cebu City, 6000",
+            "phone": "+63 32 123 4567",
             "description" : "Trustworthy and skilled professionals ready to tackle any repair or maintenance task. From fixing to renovating, we provide reliable solutions to keep your home or business in perfect condition.",
-            "imagepath" : "/images/handyman.jpg"
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/handyman.jpg"
         },
         {
-            "businessname": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
+            "businessname": "HomeBuild Construction",
+            "address": "456 Ayala Center, Cebu Business Park, Cebu City, 6000 ",
+            "phone": "+63 32 123 4567",
+            "description" : "Transforming visions into reality, we specialize in crafting exceptional homes. With meticulous attention to detail and a commitment to quality, we build spaces that inspire and endure",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/construction.jpg"
         },
         {
-            "businessname": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
+            "businessname": "Squeaky Clean",
+            "address": "789 Mandaue Road, North Reclamation Area, Cebu City, 6000",
+            "phone": "+63 32 123 4567",
+            "description" : "Experience the ultimate pampering for your vehicle. Our expert team delivers meticulous hand wash and detailing services, leaving your car impeccably clean, shining, and ready to hit the road.",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/car-wash.jpg"
         },
         {
-            "businessname": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
+            "businessname": "Bruno & Mars Business Consulting ",
+            "address": "101 Colon Street, Barangay Parian, Cebu City, 6000",
+            "phone": "+63 32 123 4567",
+            "description" : "Your trusted partner for strategic guidance and growth. We provide tailored solutions, innovative strategies, and expert advice to help your business reach new heights of success.",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/business-consulting.jpg"
         },
         {
-            "businessname": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
+            "businessname": "BigBite Food and Drink",
+            "address": "234 Archbishop Reyes Avenue, Barangay Kamputhaw, Cebu City, 6000",
+            "phone": "+63 32 123 4567",
+            "description" : "Delight in a culinary adventure with our extensive menu of mouthwatering dishes and refreshing beverages. Satisfy your cravings with generous portions and flavors that pack a punch",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/bigbite.jpg"
         },
         {
-            "businessname": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
+            "businessname": "Catarina Beauty Salon",
+            "address": "222 Gorordo Avenue, Barangay Kamputhaw, Cebu City, 6000",
+            "phone": "+63 32 123 4567",
+            "description" : "Unleash your inner beauty and step into a world of pampering and rejuvenation. Our skilled professionals offer a range of services to enhance your natural radiance and boost your confidence",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/beauty-salon.jpg"
         }
     ]
 }
