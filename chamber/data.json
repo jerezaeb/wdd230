@@ -2,64 +2,64 @@
     "business": [
         {
             "businessname": "Street Food Market",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : "https://github.com/jerezaeb/wdd230/blob/main/chamber/images/streetfood.jpg"
+            "address": "32 Victoria Rd, Lahug Cebu City 6000",
+            "phone": "0915 234 5678",
+            "description" : "Experience a tantalizing feast for your taste buds as you indulge in a vibrant assortment of global street food flavors, served up with passion and authenticity",
+            "imagepath" : "https://jerezaeb.github.io/wdd230/chamber/images/streetfood.jpg"
         },
 
         
         {
-            "name": "",
+            "businessname": "Shop Em' All",
+            "address": "55 Mercado St Balamban Cebu City 6000",
+            "phone": "0926 478 9020",
+            "description" : "Discover a world of convenience and endless possibilities as you explore our virtual aisles, offering a wide range of products delivered right to your doorstep with just a few clicks.",
+            "imagepath" : "/images/onlineshop.jpg"
+        },
+        {
+            "businessname": "Little Seoul",
+            "address": "21 Park Road, Talamban Cebu City 6000",
+            "phone": "0917 678 1234",
+            "description" : "Embark on a mouthwatering journey through the sizzling flavors of Korean BBQ. Indulge in premium cuts of grilled pork belly, accompanied by an array of delicious banchan and traditional accompaniments.",
+            "imagepath" : "/images/koreanfood.jpg"
+        },
+        {
+            "businessname": "HandyMan Repair Service",
+            "address": "",
+            "phone": "",
+            "description" : "Trustworthy and skilled professionals ready to tackle any repair or maintenance task. From fixing to renovating, we provide reliable solutions to keep your home or business in perfect condition.",
+            "imagepath" : "/images/handyman.jpg"
+        },
+        {
+            "businessname": "",
             "address": "",
             "phone": "",
             "description" : "",
             "imagepath" : ""
         },
         {
-            "name": "",
+            "businessname": "",
             "address": "",
             "phone": "",
             "description" : "",
             "imagepath" : ""
         },
         {
-            "name": "",
+            "businessname": "",
             "address": "",
             "phone": "",
             "description" : "",
             "imagepath" : ""
         },
         {
-            "name": "",
+            "businessname": "",
             "address": "",
             "phone": "",
             "description" : "",
             "imagepath" : ""
         },
         {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
-        },
-        {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
-        },
-        {
-            "name": "",
-            "address": "",
-            "phone": "",
-            "description" : "",
-            "imagepath" : ""
-        },
-        {
-            "name": "",
+            "businessname": "",
             "address": "",
             "phone": "",
             "description" : "",

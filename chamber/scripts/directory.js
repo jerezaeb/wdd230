@@ -1,4 +1,4 @@
-const url = 'https://github.com/jerezaeb/wdd230/blob/main/chamber/data.json';
+const url = 'https://jerezaeb.github.io/wdd230/chamber/data.json';
 
 
 // async function getProphetData(url) {
@@ -13,7 +13,7 @@ fetch (url)
         return response.json();
         })
     .then (function (jsonObject){
-      const business = jsonObject ['busines'];
+      const business = jsonObject ['business'];
       const cards = document.querySelector ('div.cards');
    
     prophets.forEach((prophet) => {
