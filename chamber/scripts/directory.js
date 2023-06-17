@@ -16,7 +16,7 @@ fetch (url)
       const business = jsonObject ['business'];
       const cards = document.querySelector ('div.cards');
    
-    prophets.forEach((prophet) => {
+    business.forEach((business) => {
       // Create elements to add to the div.cards element
       let card = document.createElement('section');
       let h2 = document.createElement('h2');
@@ -33,13 +33,13 @@ fetch (url)
       logo.setAttribute('src', business.imagepath);
       logo.setAttribute('alt', `Logo of ${business.businessname}`);
       logo.setAttribute('loading', 'lazy');
-      logo.setAttribute('width', '340');
-      logo.setAttribute('height', '440');
+      logo.setAttribute('width', '250');
+      logo.setAttribute('height', '250');
 
 
       address.innerHTML = `Address: ${business.address}`;
       phone.innerHTML = `Phone: ${business.phone}`;
-      description.innerHTML = `About: ${business.description}`;
+      description.innerHTML = `${business.description}`;
     
 
 
