@@ -3,7 +3,7 @@ main {
     height: 600px;
     margin: auto;
     border: 1px solid gray;
-    background-color: lightgrey;
+    background-color: rgb(205, 247, 206)
 }
 header {
     text-align: center;
@@ -12,8 +12,8 @@ header {
 #weather-icon{
     width: 200px;
     height: 200px;
-    justify-content: center;
-    margin: auto;
+
+    margin-left: 200px;
 }
 
 figcaption {
