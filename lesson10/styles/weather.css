@@ -1,0 +1,32 @@
+main {
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: lightgrey;
+}
+header {
+    text-align: center;
+}
+
+#weather-icon{
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    margin: auto;
+}
+
+figcaption {
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+p {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
