@@ -126,24 +126,26 @@
         
     }
 
-    .weather-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    
+    .weather-box  {
+        font-size: 1em;
+        margin-left: 20px; 
     }
-    .img-weather {
-        grid-column-start: 1;
-        width: 120px;
-        height: 120px;
-    }
-    .info-weather {
-        grid-column-start: 2;
-        line-height: 90%;
-    }
+   
     .info-weather h3{
         font-size: 2em;
     }
+
+    #weather-icon {
+        grid-column-start: 2;
+        width: 180px;
+        margin-top: -50px;
+    }
+    figcaption {
+        margin-top: -40px;
+        text-transform: capitalize;
+        font-weight: 700;
+    }
+   
     .spotlight1
     {
         grid-column-start: 5;
