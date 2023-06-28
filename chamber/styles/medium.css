@@ -1,5 +1,4 @@
-
-@media only screen and (min-width: 768px)  {
+@media only screen and (min-width: 37.5em) and (max-width:60em) {
 
 body {
     font-family: 'Montserrat', 'Roboto';
@@ -18,9 +17,9 @@ header {
     width:100%;
     }
 
-header, main, footer {
+/* header, main, footer {
     width: 100%;
-}
+} */
 h1{
     margin-top: 10px;
     }
@@ -98,21 +97,34 @@ h1{
 
 .gridContainer{
     display: grid;
-    /* width: 100%; */
-    /* height: 100vh; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 300px);
+    width: 100%;
+    column-gap: 10px;
     margin-top: 10px;
    
     
 }
 .event{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 5;
+    grid-row-end: 5;
     background: radial-gradient(#eeee, #368DFF);
     text-align: center;
-    width:80%;
+    width:100%;
 }
-
+.hero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
 #heroimg {
-    width: 80%;
-    height: auto;
+    
+    width: 100%;
+    height: 300px;
+  
     
 }
 .cta {
@@ -131,7 +143,11 @@ h1{
     margin: 10px;
     background: radial-gradient(#eeee, #368DFF);
     text-align: center;
-    width:80%;
+    width:100%;
+    grid-column-start: 2;
+    grid-column-end:2;
+    grid-row-start: 5;
+    grid-row-end: 5;
 }
 
 
@@ -148,17 +164,25 @@ h1{
 
 .spotlight1
 {
-    width:80%;
+    width:100%;
     margin:10px;
     background: radial-gradient(#eeee, #F2D0C6);
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 .spotlight2
 {
-    width:80%;
+    width:100%;
     margin:10px;
     background: radial-gradient(#eeee, #F2D0C6);
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
 .spotlight3
 {
@@ -166,24 +190,34 @@ h1{
     margin:10px;
     background: radial-gradient(#eeee, #F2D0C6);
     text-align: center;
+    visibility: hidden;
 }
 
 .spotlight-image {
-    width: 200px;
+    width: 100px;
     height: auto;
 }
 .join
 {
-    width:80%;
+    width:100%;
     margin:10px;
     background: radial-gradient(#eeee, #368DFF);
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
     
 }
 
 .newsrelease
 {
-    width:80%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    width:100%;
+   
     margin:10px;
     border: 1px solid #0C356B;;
 }
