@@ -118,17 +118,18 @@
     .cta {
         
         width: 100px;
-        background: radial-gradient(#eee, #0C356B);
+        background: radial-gradient(#eee, #F2D0C6);
         border: 1px solid rgba(0,0,0,.1);
         padding: 10px;
         text-align: center;
-        border: 2px solid #0C356B;
         font-weight: bold;
-        z-index: 9;
+        position: absolute;
+        top: 70%;
+     left: 30%;
         }
     .weather
     {
-        margin: 10px;
+   
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
         width:100%;
@@ -149,21 +150,18 @@
     .spotlight1
     {
         width:100%;
-        margin:10px;
         background: radial-gradient(#eeee, #F2D0C6);
         text-align: center;
     }
     .spotlight2
     {
         width:100%;
-        margin:10px;
         background: radial-gradient(#eeee, #F2D0C6);
         text-align: center;
     }
     .spotlight3
     {
         width:100%;
-        margin:10px;
         background: radial-gradient(#eeee, #F2D0C6);
         text-align: center;
     }
@@ -175,7 +173,6 @@
     .join
     {
         width:100%;
-        margin:10px;
         background: radial-gradient(#eeee, #368DFF);
         text-align: center;
         
@@ -184,7 +181,6 @@
     .newsrelease
     {
         width:100%;
-        margin:10px;
         border: 1px solid #0C356B;;
     }
     footer {

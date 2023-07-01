@@ -376,7 +376,18 @@ section p {
 
 }
 
+.thankyou-page{
+ height: 400px;
+ margin: 100px;
+}
 
+.map {
+    width: 600px;
+    height: auto;
+    margin: 50px;
+}
 
-
+.address {
+    margin-right:  300px;
+}
 }
