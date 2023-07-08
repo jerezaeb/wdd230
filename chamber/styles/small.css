@@ -1,3 +1,4 @@
+
 @media only screen and (max-width: 37.5em) {
 
 
@@ -263,11 +264,11 @@
           }
           
           .lazy-image {
-        
+            display : block;
             width: 300px;
             height: auto;
-            background-color: lightgray;
-            transition: opacity 0.5s ease-in-out;
+            /* background-color: lightgray; */
+            /* transition: opacity 0.5s ease-in-out; */
             margin-bottom: 20px;
             border-radius: 0px 50px 0px 50px;
             
@@ -276,7 +277,7 @@
           }
     
           .info-discover {
-            width: 400x;
+           width: 100%;
             height: auto;
         
           }
