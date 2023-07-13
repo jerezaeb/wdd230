@@ -1,0 +1,150 @@
+@media only screen and (min-width: 1200px)  {
+
+body {
+    font-family: 'Lato', 'Libre Franklin', 'Montserrat';
+    width: 100%;
+}
+header {
+    display: flex;
+    background-color: #4A7010;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+.logo {
+    display: flex;
+    width: 200px;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: -20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    
+}
+
+/* nav a {
+    padding: 35px;
+} */
+.socials {
+    width: 30px;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.socials-linkedin {
+    margin-top: 10px;
+    width: 60px;
+}
+
+#hero-img {
+    width: 100%;
+}
+#hamButton {
+    display: none;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 50px;
+
+
+    
+}
+.navigation li{
+    display: block;
+    /* flex: 1 1 auto; */
+}
+
+.navigation a {
+    padding-left:200px;
+
+    color: white;
+    font-family: Libre Franklin;
+    justify-content: space-evenly;
+    
+    
+}
+
+.cta {
+    background:radial-gradient(#7CBD1A,#4A7010);
+    border: 1px solid (#577031);
+    padding:30px;
+    width: 400px;
+    color: white;
+    font-size: 20px;
+    font-family: Libre Franklin;
+    position: absolute;
+    margin-top: -300px;
+    margin-left:600px;
+    text-align: center;
+}
+
+footer {
+    background-color:#7CBD1A;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.home-container {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns:  1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 400px;
+    
+}
+.drinks-served {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid;
+
+}
+
+.weather-box{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 1px solid;
+}
+
+.locations {
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    border: 1px solid;
+
+}
+
+#phone {
+    color:white;
+    margin-top: 15px;
+    margin-right: 20px;;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+modified-date{
+    align-items: center;
+    
+}
+}

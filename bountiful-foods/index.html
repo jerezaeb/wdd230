@@ -21,6 +21,7 @@
             <a id ="logo-link" href="index.html">
                 <img class = "logo" src="images/bountiful-logo.png">
             </a>
+            
             <nav>
                 <button id ="hamButton">&#9776;</button>
                 <ul class="navigation">
@@ -37,20 +38,43 @@
                 <a id ="social-links" href="https://facebook.com" target="_blank"></a>
                 <img class="socials" src="images/facebook.png" alt ="facebook">
                 </a>
-
+                <a id ="social-links" href="https://linkedin.com" target="_blank"></a>
+                <img class="socials-linkedin" src="images/linkedin.png" alt ="linkedin">
+                </a>
             </div>
+            <a id="phone" href="+1-760-555-0199"> +1-760-555-0199</a>
         </header>
 
         <main>
-            <div class="hero"> <img id="hero-img" src="images/hero.jpg" alt= "bountiful food hero">
-                <section class="cta">Organically Fresh Delights</section>
+            <div class="hero"> <img id="hero-img" src="images/hero.png" alt= "bountiful food hero">
+                <section class="cta">Get Your Organically Fresh Delights</section>
             </div>
+            <div class="home-container">
+                <section class="drinks-served"><h2>Drinks Served</h2>
+                </section>
+                <section class="locations"> <h3>Locations</h3>
+                </section>
+                <section class="weather-box">
+                    <h2>Weather in Carlsbad</h2>
+                    <p><span id="current-temp"></span>&deg;C</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <figure>
+                        <img src="" alt="" id="forecast">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>3-day Weather Forecast<scan id="forecast-weather"></scan></p>
+                </section>
+             </div>
         </main>
 
 
 
         <footer>
+            <p>Bountiful Foods</p>
+            <p> Copyright &copy; <span id="year"></span> </p>
+            <span id="modified-date"></span>
 
         </footer>
+        <script src="scripts/bountiful.js"></script>
     </body>
 </html>
