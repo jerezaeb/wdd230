@@ -101,7 +101,7 @@ footer {
     grid-template-columns:  1fr 3fr 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 20px;
-    height: 400px;
+    height: 800px;
     
 }
 .drinks-served {
@@ -119,6 +119,12 @@ footer {
     grid-row-start: 1;
     grid-row-end: 1;
     border: 1px solid;
+    text-align: center;
+    background-color: #7CBD1A;
+
+}
+.weather-box h2{
+    font-family: Libre Franklin;
 }
 
 .locations {
@@ -143,8 +149,115 @@ footer{
     justify-content:space-evenly;
 }
 
-modified-date{
+.modified-date{
     align-items: center;
     
 }
+
+/* .forecast-weather{
+   display: flex;
+   flex-direction: row;
+
+}
+
+.forecast-cards {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .forecast-card {
+    flex: 1 0 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  } */
+
+  .weather{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+  }
+
+
+  .current-temp{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    
+  }
+  .current-weather{
+    font-family: roboto;
+    font-size: 30px;
+  }
+
+  .forecast-cards{
+    display: grid;
+
+  }
+  
+  .forecast-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .drink-container {
+    max-width: 800px;
+    padding: 10px;
+    margin:0 auto;
+    height: 700px;
+    justify-content: center;
+    border-radius: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: lato;
+  }
+  .drink-container h1 {
+      text-align: center;
+  }
+
+#drink-form{
+    display: grid;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.form-input label {
+    display: block;
+    font-weight: bold;
+  }
+
+.form-input input,
+.form-input select,
+.form-input textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.form-input textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"] {
+  background-color: #7CBD1A;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+input[type="submit"]:hover {
+  background-color: #577031;
+}
+
+
 }

@@ -35,17 +35,17 @@ function displayResults (weatherData){
     captionDesc.innerHTML = desc;
 
 }
-apiFetch();
 //Weather Forecast
 
 const forecast =document.querySelector("#forecast-weather")
-const forecastURL="https://api.openweathermap.org/data/2.5/forecast?lat=33.15997555541721&lon=-117.34966610123618&appid=d0931df1a7acbfad9a6e4b6dc518ce69"
-async function apiFetch () {
+const forecastURL="https://api.openweathermap.org/data/2.5/forecast?lat=33.15997555541721&lon=-117.34966610123618&units=metric&appid=d0931df1a7acbfad9a6e4b6dc518ce69"
+async function fetchForecast () {
     try{
         const response = await fetch(forecastURL);
         if(response.ok){
             const data= await response.json();
-            displayResults(data);
+            // console.log(data);
+            displayForecast(data);
         }else {     
             throw Error(await response.text())
         }
@@ -53,3 +53,107 @@ async function apiFetch () {
         console.log(error);
     }
 }
+
+
+function displayForecast(forecastData){
+    forecast.innerHTML =" ";
+    const forecastCards = {};
+
+    for (const forecastItem of forecastData.list){
+        const forecastDate = forecastItem.dt_txt.split(" ")[0];
+
+        if (isWithinNextThreeDays (forecastDate)){
+            if (!forecastCards[forecastDate]){
+                const forecastTemperature = forecastItem.main.temp.toFixed(1);
+                const forecastDesc = forecastItem.weather[0].description;
+                
+                const forecastCard = document.createElement ("div");
+                forecastCard.classList.add ("forecast-card");
+                
+                const dateElement = document.createElement ("p");
+                dateElement.textContent = `${formatDate(forecastDate)}`;
+                
+                const temperatureElement = document.createElement ("p");
+                temperatureElement.textContent = `${forecastTemperature}°C`;
+                
+                const descElement =document.createElement ("p");
+                descElement.textContent = `${forecastDesc}`;
+                
+                forecastCard.appendChild(dateElement);
+                forecastCard.appendChild(temperatureElement);
+                forecastCard.appendChild(descElement);
+
+                forecast.appendChild(forecastCard);
+
+                forecastCards[forecastDate] = forecastCard;
+
+            }
+        }
+    }
+}
+
+function isWithinNextThreeDays (dateString){
+    const currentDate = new Date();
+    const forecastDate = new Date(dateString);
+    //Calculate the difference in days
+    const timeDiff= forecastDate.getTime()-currentDate.getTime();
+    const diffDays =Math.ceil (timeDiff / (1000*3600*24));
+    return diffDays >= 1 && diffDays <=3;
+}
+
+function formatDate (dateString){
+    const date = new Date (dateString);
+    return date.toLocaleDateString(undefined, {weekday:"long", month:"long",day:"numeric"});
+}
+    
+fetchForecast();
+apiFetch();
+
+
+//Form
+
+const form=document.querySelector("#drink-form");
+const fruitURL ="https://brotherblazzard.github.io/canvas-content/fruit.json";
+
+form.addEventListener("Submit", function(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const formObject=Object.formEntries(formData);
+    localStorage.setItem('formEntry', JSON.stringify(formObject));
+    form.reset();
+    alert("Form submitted successfully!")
+});
+
+fetch(fruitURL)
+
+.then (function(response) {
+    return response.json();
+    })
+.then (function (jsonObject){
+//   .then(response => response.json())
+//   .then(data => {
+    const fruitOptions = data.fruit;
+
+    // Populate the select elements with fruit options
+    const fruit1Select = document.querySelector('#fruit1');
+    const fruit2Select = document.querySelector('#fruit2');
+    const fruit3Select = document.querySelector('#fruit3');
+
+    fruitOptions.forEach(fruit => {
+      const option = document.createElement('option');
+      option.value = fruit;
+      option.textContent = fruit;
+
+      fruit1Select.appendChild(option);
+      fruit2Select.appendChild(option.cloneNode(true));
+      fruit3Select.appendChild(option.cloneNode(true));
+    });
+  })
+  .catch(error => {
+    console.log('Error fetching fruit data:', error);
+  });
+
+
+
+
+

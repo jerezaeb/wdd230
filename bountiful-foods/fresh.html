@@ -27,7 +27,7 @@
                 <ul class="navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="">About Us</a></li>
-                    <li><a href="fresh.html">Fresh</a></li>
+                    <li><a href="#">Fresh</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
@@ -46,32 +46,43 @@
         </header>
 
         <main>
-            <div class="hero"> <img id="hero-img" src="images/hero.png" alt= "bountiful food hero">
-                <section class="cta"><a href="fresh.html">Get Your Organically Fresh Delights</a></section>
-            </div>
-            <div class="home-container">
-                <section class="drinks-served"><h2>Drinks Served</h2>
-                </section>
-                <section class="locations"> <h3>Locations</h3>
-                </section>
-                <div class="weather-box">
-                    <h2>Weather in Carlsbad</h2>
-                    <div class="weather">
-                        <section class="current-weather">
-                            <h3>Today</h3>
-                            <p><span id="current-temp"></span>&deg;C</p>
-                            <p>Humidity: <span id="humidity"></span>%</p>
-                            <figure>
-                                <img src="" alt="" id="forecast">
-                                <figcaption></figcaption>
-                            </figure>
-                        </section>
-                        <section>
-                        <span id="forecast-weather"></span>
-                        </section>
-                    </div>
+            <section class="drink-container">
+                <h1>Make Your Refreshing Drink</h1>
+            <form id="drink-form">
+                <div class="form-input">
+                <label for="first-name">First Name:  </label>
+                <input type="text" id="first-name" name="first-name" required>
                 </div>
-             </div>
+                <div class="form-input">
+                <label for="email">Email Address:  </label>
+                <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-input">
+                <label for="phone">Phone Number:  </label>
+                <input type="text" id="first-name" name="first-name" required>
+                </div>
+                <div class="form-input">
+                <label for="fruit1">Fruit 1  </label>
+                <select id="fruit1" name="fruit1" required></select>
+                </div>
+                <div class="form-input">
+                <label for="fruit2">Fruit 2  </label>
+                <select id="fruit2" name="fruit2" required></select>
+                </div>
+                <div class="form-input">
+                <label for="fruit3">Fruit 3  </label>
+                <select id="fruit3" name="fruit3" required></select>
+                </div>
+                <div class="form-input">
+                <label for="Special Instruction">Fruit 3  </label>
+                <textarea id="instruction" name="instruction" ></textarea>
+                <div>
+                    <input type="hidden" name="dateandtime" value="">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        
         </main>
 
 
