@@ -112,48 +112,87 @@ apiFetch();
 
 //Form
 
-const form=document.querySelector("#drink-form");
-const fruitURL ="https://brotherblazzard.github.io/canvas-content/fruit.json";
+// const form=document.querySelector("#drink-form");
+// const fruitURL ="https://brotherblazzard.github.io/canvas-content/fruit.json";
 
-form.addEventListener("Submit", function(event) {
-    event.preventDefault();
-    const formData = new FormData(form);
-    const formObject=Object.formEntries(formData);
-    localStorage.setItem('formEntry', JSON.stringify(formObject));
-    form.reset();
-    alert("Form submitted successfully!")
-});
+// form.addEventListener("Submit", function(event) {
+//     event.preventDefault();
+//     const formData = new FormData(form);
+//     const formObject=Object.formEntries(formData);
+//     localStorage.setItem('formEntry', JSON.stringify(formObject));
+//     form.reset();
+//     alert("Form submitted successfully!")
+// });
 
-fetch(fruitURL)
+// fetch(fruitURL)
 
-.then (function(response) {
-    return response.json();
-    })
-.then (function (jsonObject){
-//   .then(response => response.json())
-//   .then(data => {
-    const fruitOptions = data.fruit;
+// .then (function(response) {
+//     return response.json();
+//     })
+// .then (function (jsonObject){
+//   const fruits = jsonObject;
+//   const fruitOptions=fruits.map(fruit =>fruit.name);
+// //   .then(response => response.json())
+// //   .then(data => {
+// //  const fruitOptions = data.fruit;
 
-    // Populate the select elements with fruit options
-    const fruit1Select = document.querySelector('#fruit1');
-    const fruit2Select = document.querySelector('#fruit2');
-    const fruit3Select = document.querySelector('#fruit3');
+//     // Populate the select elements with fruit options
+//     const fruit1Select = document.querySelector('#fruit1');
+//     const fruit2Select = document.querySelector('#fruit2');
+//     const fruit3Select = document.querySelector('#fruit3');
 
-    fruitOptions.forEach(fruit => {
-      const option = document.createElement('option');
-      option.value = fruit;
-      option.textContent = fruit;
+//     fruitOptions.forEach(fruit => {
+//       const option = document.createElement('option');
+//       option.value = fruit;
+//       option.textContent = fruit;
 
-      fruit1Select.appendChild(option);
-      fruit2Select.appendChild(option.cloneNode(true));
-      fruit3Select.appendChild(option.cloneNode(true));
-    });
-  })
-  .catch(error => {
-    console.log('Error fetching fruit data:', error);
-  });
-
-
+//       fruit1Select.appendChild(option);
+//       fruit2Select.appendChild(option.cloneNode(true));
+//       fruit3Select.appendChild(option.cloneNode(true));
+//     });
+//   })
+//   .catch(error => {
+//     console.log('Error fetching fruit data:', error);
+//   });
 
 
+// //Drinks Served
 
+// const drinksServedSection = document.querySelector('.drinks-served');
+// const drinksCountElement = document.querySelector('#drinks');
+
+// // Retrieve the drinks count from local storage
+// let drinksCount = localStorage.getItem('drinksCount');
+// drinksCount = drinksCount ? parseInt(drinksCount) : 0;
+
+// // Update the drinks count element
+// drinksCountElement.textContent = drinksCount;
+
+// // Event listener for form submission
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault(); // Prevent form submission
+
+//   // Increment the drinks count
+//   drinksCount++;
+  
+//   // Update the drinks count element
+//   drinksCountElement.textContent = drinksCount;
+
+//   // Save the updated drinks count to local storage
+//   localStorage.setItem('drinksCount', drinksCount.toString());
+
+//   // Reset the form
+//   form.reset();
+
+//   // Show a confirmation message or perform any desired action
+//   alert('Form submitted successfully!');
+// });
+
+
+
+const drinksCountElement = document.querySelector("#drinks");
+
+let drinksCount = localStorage.getItem("drinksCount");
+drinksCount = drinksCount ? parseInt(drinksCount) : 0;
+
+drinksCountElement.textContent = drinksCount;
