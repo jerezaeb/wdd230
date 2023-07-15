@@ -36,21 +36,25 @@ fetch(fruitURL)
     console.log("Error fetching fruit data:", error);
   });
 
-// Drinks Served
-
-const drinksServedSection = document.querySelector(".drinks-served");
-const drinksCountElement = document.querySelector("#drinks");
-
-let drinksCount = localStorage.getItem("drinksCount");
-drinksCount = drinksCount ? parseInt(drinksCount) : 0;
-
-drinksCountElement.textContent = drinksCount;
+// Drinks Servedconst form = document.querySelector("#drink-form");
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  drinksCount++;
-  drinksCountElement.textContent = drinksCount;
-  localStorage.setItem("drinksCount", drinksCount.toString());
-  form.reset();
-  alert("Form submitted successfully!");
-});
+    event.preventDefault();
+    
+    // Retrieve the current drinks count from local storage
+    let drinksCount = localStorage.getItem("drinksCount");
+    drinksCount = drinksCount ? parseInt(drinksCount) : 0;
+    
+    // Increment the drinks count
+    drinksCount++;
+    
+    // Update the drinks count in local storage
+    localStorage.setItem("drinksCount", drinksCount.toString());
+  
+    // Reset the form
+    form.reset();
+    
+    // Redirect to the other page where the drinks count will be displayed
+    window.location.href = "index.html";
+  });
+

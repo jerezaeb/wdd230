@@ -188,10 +188,9 @@ apiFetch();
 //   alert('Form submitted successfully!');
 // });
 
-
-
 const drinksCountElement = document.querySelector("#drinks");
 
+// Retrieve the drinks count from local storage
 let drinksCount = localStorage.getItem("drinksCount");
 drinksCount = drinksCount ? parseInt(drinksCount) : 0;
 
