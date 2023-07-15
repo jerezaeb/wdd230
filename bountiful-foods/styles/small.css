@@ -91,6 +91,8 @@
         font-family: Libre Franklin;
         position: absolute;
         text-align: center;
+        margin-top: -100px;
+        margin-left: 60px;
     }
     
     footer {
@@ -114,6 +116,7 @@
         margin-top: 20px;
         text-align: center;
         background-color: #7CBD1A;
+        margin-bottom: 30px;
     
     }
     .weather-box h2{
@@ -123,8 +126,27 @@
     .locations {
     
        
-        border: 1px solid;
+        text-align: center;
     
+    }
+
+    .locations h3{
+        font-size: large;
+    }
+
+    .store1{
+        padding: 15px;
+    }
+
+    .store2{
+        padding: 15px;
+    }
+
+    .store3{
+        padding: 15px;
+    }
+    .store4{
+        padding: 15px;
     }
     
     #phone {

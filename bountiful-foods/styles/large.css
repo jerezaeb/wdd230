@@ -128,13 +128,39 @@ footer {
 }
 
 .locations {
-
+    display:grid;
     grid-column-start: 2;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 2;
-    border: 1px solid;
+    
+    margin-bottom: 20px;
+    text-align: center;
+    grid-template-columns: 4 1fr;
+    font-size: 1em;
 
+}
+
+.locations h3{
+    font-size: 30px;
+}
+.store1{
+grid-column-start: 1;
+grid-column-end: 2;
+}
+
+.store2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    }
+.store3{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.store4{
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 #phone {
