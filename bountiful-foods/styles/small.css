@@ -21,19 +21,20 @@
     nav {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+
         
     }
     
     .socials {
-        width: 20px;
-        margin-top: 30px;
+        width: 30px;
+        margin-top: 40px;
     
     }
     
     .socials-linkedin {
-        margin-top: 20px;
-        width: 40px;
+        
+        width: 60px;
+        margin-top: 10px;
     }
     
     #hero-img {
@@ -81,6 +82,11 @@
     .navigation.responsive li a {
         display: block;
     }
+    #phone {
+        color:white;
+        margin-top: 15px;
+        margin-right: 30px;
+    }
     .cta {
         background:radial-gradient(#7CBD1A,#4A7010);
         border: 1px solid (#577031);
@@ -92,7 +98,7 @@
         position: absolute;
         text-align: center;
         margin-top: -100px;
-        margin-left: 60px;
+        margin-left: 70px;
     }
     
     footer {
@@ -158,8 +164,9 @@
     }
     footer{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
+        text-align: center;
         justify-content:space-evenly;
     }
     
@@ -288,5 +295,36 @@
         
         
     }
+
+
+.about-heading h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+}
+.about {
+    text-align: center;
+    width: 90%;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 2;
+
+}
+
+.map {
+    width: 350px;
+    height: auto;
+    text-align: center;
+}
+.locations-about {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+}
+
+.locations-list {
+    font-size: 20px;
+}
     
     }

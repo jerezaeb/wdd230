@@ -1,3 +1,17 @@
+// Footer Date
+let currentYear = new Date().getFullYear();
+document.querySelector ("#year").textContent = currentYear;
+
+let lastModif = new Date(document.lastModified);
+document.querySelector ("#modified-date").textContent =`Last Update: ${lastModif}`;
+
+const hamButton = document.querySelector('#hamButton');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('responsive');
+});
+
 const form = document.querySelector("#drink-form");
 const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
 

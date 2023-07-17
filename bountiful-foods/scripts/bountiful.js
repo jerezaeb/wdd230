@@ -5,6 +5,12 @@ document.querySelector ("#year").textContent = currentYear;
 let lastModif = new Date(document.lastModified);
 document.querySelector ("#modified-date").textContent =`Last Update: ${lastModif}`;
 
+const hamButton = document.querySelector('#hamButton');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('responsive');
+});
 
 // Weather
 const currentTemp = document.querySelector ("#current-temp");
