@@ -78,7 +78,7 @@ form.addEventListener("submit", function(event) {
 
       
       // Display the alert message
-      alert (`Order Place Successfully\n${alertMessage}`);
+      alert (`Order placed successfully!\n${alertMessage}`);
 
       // Reset the form
       form.reset();
