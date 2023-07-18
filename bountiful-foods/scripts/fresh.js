@@ -68,9 +68,9 @@ form.addEventListener("submit", function(event) {
       alertMessage += `Phone: ${formObject.phone}\n`;
       alertMessage += `Fruits: ${selectedFruits.join(", ")}\n`;
       alertMessage += `Special Instructions: ${formObject.instruction}\n`;
-      alertMessage += `Order Date: ${currentDate}\n`;
+      alertMessage += `Order Date: ${currentDate}\n\n`;
       alertMessage += `Nutritional Information:\n`;
-      alertMessage += `Total Carbohydrates: ${totalCarbohydrates}g\n`;
+      alertMessage += `Total Carbohydrates: ${totalCarbohydrates.toFixed(2)}g\n`;
       alertMessage += `Total Protein: ${totalProtein}g\n`;
       alertMessage += `Total Fat: ${totalFat}g\n`;
       alertMessage += `Total Sugar: ${totalSugar}g\n`;
@@ -78,7 +78,7 @@ form.addEventListener("submit", function(event) {
 
       
       // Display the alert message
-      alert(alertMessage);
+      alert (`Order Place Successfully\n${alertMessage}`);
 
       // Reset the form
       form.reset();
